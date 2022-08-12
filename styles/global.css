@@ -33,6 +33,17 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .hide {
     display: none;
