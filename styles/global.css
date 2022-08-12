@@ -48,3 +48,25 @@ footer {
 .hide {
     display: none;
 }
+
+@keyframes secretGrow {
+    from {
+        height: 10%;
+        width: 10%;
+    }
+    to {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.eleni {
+    height: 10%;
+    width: 10%;
+}
+
+.growImg {
+    animation-name: secretGrow;
+    animation-duration: 60s;
+    animation-delay: 10s;
+}

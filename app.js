@@ -12,6 +12,7 @@ const questionContainer = document.getElementById('question-container');
 const fortuneContainer = document.getElementById('fortune');
 const result = document.getElementById('result');
 const retry = document.getElementById('retry');
+const eleniImg = document.getElementById('eleniImg');
 const answers = [
     'kiss her you fool',
     'uhhhhh busy rn',
@@ -23,7 +24,7 @@ const answers = [
     'once i literally followed a demon girl to hell',
     'what was the question again?',
     "no kamilla don't look in that folder",
-    'someday i will be a demon princess',
+    'someday i will be a demon lord',
     'demons are so handsome',
     'check out those horns',
     'ffffffffffffffffffffffffffffffffff sat on keyboard',
@@ -40,9 +41,11 @@ submit.addEventListener('click', () => {
     const randNum = Math.floor(Math.random() * answers.length);
     const randomAnswer = answers[randNum];
     result.textContent = randomAnswer;
+    eleniImg.classList.toggle('growImg');
 });
 
 retry.addEventListener('click', () => {
     questionContainer.classList.toggle('hide');
     fortuneContainer.classList.toggle('hide');
+    eleniImg.classList.toggle('growImg');
 });
